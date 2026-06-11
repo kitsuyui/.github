@@ -1,7 +1,6 @@
 # Security Policy
 
-日本語: 脆弱性は公開 issue に書かず、下記の「Report a vulnerability」から
-非公開で報告してください。
+Japanese version: [SECURITY.ja.md](SECURITY.ja.md)
 
 ## Reporting a vulnerability
 
