@@ -1,0 +1,58 @@
+name: Bug report / バグ報告
+description: Report something that does not work as documented. / ドキュメント通りに動かないことの報告。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. You can write in **English or Japanese**.
+        日本語でも英語でも書けます。
+
+        Before filing: please check existing issues (including closed ones),
+        and make sure you are on the latest released version.
+
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched existing issues and this is not a duplicate. / 既存 issue を検索し、重複ではないことを確認した。
+          required: true
+
+  - type: textarea
+    id: version
+    attributes:
+      label: Version and environment / バージョンと環境
+      description: |
+        The version of this project you are using, how you installed it,
+        and your OS / runtime version.
+      placeholder: |
+        ex. mylib 1.2.3 (pip), Python 3.13, macOS 15.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce / 再現手順
+      description: |
+        Minimal steps or code that reproduce the problem. The smaller the
+        reproduction, the faster the fix. / 最小の再現手順・コード。
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 実際の挙動
+      description: |
+        What happened, including full error messages or output.
+        / 何が起きたか。エラーメッセージや出力をそのまま。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期待した挙動
+    validations:
+      required: true

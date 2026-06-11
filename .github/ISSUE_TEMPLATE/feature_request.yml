@@ -1,0 +1,40 @@
+name: Feature request / 機能提案
+description: Propose a feature — discussion happens here before any PR. / 機能の提案。PR の前にここで議論します。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can write in **English or Japanese**. 日本語でも英語でも書けます。
+
+        Per [CONTRIBUTING](https://github.com/kitsuyui/.github/blob/main/CONTRIBUTING.md),
+        features need agreement in an issue **before** a pull request.
+        These libraries are intentionally small; some good ideas are better
+        outside the core, and that is a fine outcome of this discussion.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem / 解決したい問題
+      description: |
+        What problem are you trying to solve. Describe the situation,
+        not the solution. / 解決策ではなく、困っている状況を書いてください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed direction / 提案 (任意)
+      description: |
+        If you have an idea of how to solve it, sketch it here.
+        Alternatives you considered are also welcome.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementation / 実装について
+      options:
+        - label: I am willing to implement this myself if accepted. / 受け入れられたら自分で実装するつもりがある。
+          required: false
