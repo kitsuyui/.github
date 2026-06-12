@@ -8,6 +8,7 @@ present, takes precedence over these defaults.
 デフォルトの community health files です。各リポジトリに同種のファイルが
 ある場合はそちらが優先されます。
 
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - [CONTRIBUTING.md](CONTRIBUTING.md) / [CONTRIBUTING.ja.md](CONTRIBUTING.ja.md)
 - [AI_POLICY.md](AI_POLICY.md) / [AI_POLICY.ja.md](AI_POLICY.ja.md)
 - [SECURITY.md](SECURITY.md)
