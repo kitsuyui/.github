@@ -12,3 +12,8 @@ present, takes precedence over these defaults.
 - [AI_POLICY.md](AI_POLICY.md) / [AI_POLICY.ja.md](AI_POLICY.ja.md)
 - [SECURITY.md](SECURITY.md)
 - Issue forms / PR template: [.github/](.github/)
+
+## Repository topics
+
+This repository is tagged with the following topics:
+`community-health-files`, `contributing-guidelines`, `github-defaults`.
