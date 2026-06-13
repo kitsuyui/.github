@@ -10,5 +10,5 @@ present, takes precedence over these defaults.
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) / [CONTRIBUTING.ja.md](CONTRIBUTING.ja.md)
 - [AI_POLICY.md](AI_POLICY.md) / [AI_POLICY.ja.md](AI_POLICY.ja.md)
-- [SECURITY.md](SECURITY.md)
+- [SECURITY.md](SECURITY.md) / [SECURITY.ja.md](SECURITY.ja.md)
 - Issue forms / PR template: [.github/](.github/)
