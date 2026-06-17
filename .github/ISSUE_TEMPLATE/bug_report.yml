@@ -27,6 +27,8 @@ body:
         and your OS / runtime version.
       placeholder: |
         ex. mylib 1.2.3 (pip), Python 3.13, macOS 15.1
+            mylib 1.2.3 (npm), Node.js 22, Ubuntu 24.04
+            mylib 1.2.3 (cargo), Rust 1.80, Windows 11
     validations:
       required: true
 
