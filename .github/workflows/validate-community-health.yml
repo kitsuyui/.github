@@ -1,0 +1,29 @@
+name: Validate community health files
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Parse issue forms
+        run: |
+          ruby -e 'require "yaml"; ARGV.each { |path| document = YAML.safe_load(File.read(path), aliases: false); abort("#{path}: expected mapping") unless document.is_a?(Hash); %w[name description body].each { |key| abort("#{path}: missing #{key}") unless document.key?(key) }; abort("#{path}: body must be a list") unless document.fetch("body").is_a?(Array) }' .github/ISSUE_TEMPLATE/bug_report.yml .github/ISSUE_TEMPLATE/feature_request.yml
+
+      - name: Check Markdown links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --verbose --no-progress './**/*.md'
